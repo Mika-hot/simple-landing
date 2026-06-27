@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts loaded via next/font in layout.tsx */
+body {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Remove default margin/padding from all elements consistently */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
