@@ -8,11 +8,15 @@ interface StatGroupProps {
   comments: number;
   textStyle: React.CSSProperties;
   iconColor: string;
+  direction?: "col" | "row";
 }
 
-export function StatGroup({ likes, comments, textStyle, iconColor }: StatGroupProps) {
+export function StatGroup({ likes, comments, textStyle, iconColor, direction = "col" }: StatGroupProps) {
   return (
-    <div className="flex flex-col" style={{ gap: 16 }}>
+    <div
+      className={direction === "row" ? "flex flex-row" : "flex flex-col"}
+      style={{ gap: direction === "row" ? 20 : 8 }}
+    >
       <StatLine Icon={FavoriteIcon} value={likes} textStyle={textStyle} iconColor={iconColor} />
       <StatLine Icon={ModeCommentRoundedIcon} value={comments} textStyle={textStyle} iconColor={iconColor} />
     </div>

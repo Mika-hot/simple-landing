@@ -51,11 +51,6 @@ export const metadata: Metadata = {
     description: "Mountain photography archive — 870 posts from the Alps.",
     images: ["/assets/Logo.svg"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/assets/Logo.svg",
-  },
   robots: {
     index: true,
     follow: true,

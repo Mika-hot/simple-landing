@@ -60,34 +60,51 @@ function PostCardRow({
           overflow: "hidden",
         }}
       >
-        <Image src={imageUrl} alt={sourceType} fill sizes="86px" className="object-cover" />
+        <Image
+          src={imageUrl}
+          alt={sourceType}
+          fill
+          sizes="86px"
+          className="object-cover"
+        />
       </div>
 
       <div
         className="flex items-center flex-1 min-w-0"
         style={{ paddingLeft: 30, paddingRight: 16 }}
       >
-        <div className="flex flex-col justify-center flex-1" style={{ gap: 8, minWidth: 0 }}>
+        <div
+          className="flex flex-col justify-center flex-1"
+          style={{ gap: 8, minWidth: 0 }}
+        >
           <span style={rowLabel}>{labelDate}</span>
           <StatGroup
             likes={likesA}
             comments={commentsA}
             textStyle={rowStatText}
             iconColor={tokens.color.textPrimary}
+            direction="row"
           />
         </div>
 
-        <div className="flex flex-col justify-center flex-1" style={{ gap: 8, minWidth: 0 }}>
+        <div
+          className="flex flex-col justify-center flex-1"
+          style={{ gap: 8, minWidth: 0 }}
+        >
           <span style={rowLabel}>{format(postDate, "d-MM-yyyy")}</span>
           <StatGroup
             likes={likesB}
             comments={commentsB}
             textStyle={rowStatText}
             iconColor={tokens.color.textPrimary}
+            direction="row"
           />
         </div>
 
-        <div className="flex flex-col justify-center flex-1" style={{ gap: 8, minWidth: 0 }}>
+        <div
+          className="flex flex-col justify-center flex-1"
+          style={{ gap: 8, minWidth: 0 }}
+        >
           <span style={rowLabel}>{sourceType}</span>
           <span style={rowDateText}>{format(sourceDate, "d-MM-yyyy")}</span>
         </div>

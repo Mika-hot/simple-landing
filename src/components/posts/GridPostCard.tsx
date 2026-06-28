@@ -14,12 +14,14 @@ const heading: React.CSSProperties = {
   lineHeight: "100%",
   letterSpacing: 0,
   color: tokens.color.textPrimary,
+  marginBottom: 8,
 };
 
 const sub: React.CSSProperties = {
   ...heading,
   fontSize: 14,
   color: tokens.color.textMuted,
+  marginTop: 24,
 };
 
 const statText: React.CSSProperties = {
