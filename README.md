@@ -5,7 +5,7 @@ A pixel-perfect Next.js 15 single-page application built from a Figma design, im
 ## 🚀 Live Deployment
 
 The application is deployed and accessible in production via Vercel:
-👉 **[]**
+👉 **[https://simple-landing-monblanproject.vercel.app/]**
 
 ---
 
