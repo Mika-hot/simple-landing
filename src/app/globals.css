@@ -9,6 +9,8 @@ body {
 }
 
 /* Remove default margin/padding from all elements consistently */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }

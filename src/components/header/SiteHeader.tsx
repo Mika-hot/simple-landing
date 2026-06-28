@@ -86,7 +86,7 @@ export default function SiteHeader({ stats, filterSlot }: SiteHeaderProps) {
             </div>
 
             {/* Row 3: date filter controls */}
-            <div className="pt-1" >{filterSlot}</div>
+            <div className="pt-1">{filterSlot}</div>
           </div>
         </div>
       </div>

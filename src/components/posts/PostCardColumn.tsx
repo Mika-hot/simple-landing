@@ -29,7 +29,12 @@ export function PostCardColumn({
       className={`flex flex-col justify-between flex-1 ${alignEnd ? "items-start pl-2" : "items-start"}`}
     >
       <span style={headerStyle}>{headerText}</span>
-      <StatGroup likes={likes} comments={comments} textStyle={statTextStyle} iconColor={iconColor} />
+      <StatGroup
+        likes={likes}
+        comments={comments}
+        textStyle={statTextStyle}
+        iconColor={iconColor}
+      />
       <span style={footerStyle}>{footerText}</span>
     </div>
   );

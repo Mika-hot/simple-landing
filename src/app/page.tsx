@@ -24,10 +24,7 @@ export default function HomePage() {
     setVisibleCount(PAGE_SIZE[filterState.layout]);
   }, [filtered, filterState.layout]);
 
-  const visible = React.useMemo(
-    () => filtered.slice(0, visibleCount),
-    [filtered, visibleCount]
-  );
+  const visible = React.useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
 
   const hasMore = visibleCount < filtered.length;
 

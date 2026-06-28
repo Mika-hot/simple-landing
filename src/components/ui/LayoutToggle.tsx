@@ -20,8 +20,7 @@ export default function LayoutToggle({ layout, onChange }: LayoutToggleProps) {
         size="small"
         aria-label="Grid view"
         sx={{
-          color:
-            layout === "grid" ? tokens.color.gradientFrom : tokens.color.textMuted,
+          color: layout === "grid" ? tokens.color.gradientFrom : tokens.color.textMuted,
           border: `1px solid ${layout === "grid" ? tokens.color.gradientFrom : tokens.color.border}`,
           borderRadius: "2px",
           padding: "4px",
@@ -34,8 +33,7 @@ export default function LayoutToggle({ layout, onChange }: LayoutToggleProps) {
         size="small"
         aria-label="Row view"
         sx={{
-          color:
-            layout === "row" ? tokens.color.gradientFrom : tokens.color.textMuted,
+          color: layout === "row" ? tokens.color.gradientFrom : tokens.color.textMuted,
           border: `1px solid ${layout === "row" ? tokens.color.gradientFrom : tokens.color.border}`,
           borderRadius: "2px",
           padding: "4px",

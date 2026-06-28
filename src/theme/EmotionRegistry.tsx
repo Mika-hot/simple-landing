@@ -9,11 +9,7 @@ import { CacheProvider } from "@emotion/react";
 // SSR-safe emotion cache for Next.js App Router.
 // Collects styles on the server and inserts them before hydration,
 // preventing the flash-of-unstyled-content and hydration mismatches.
-export default function EmotionRegistry({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function EmotionRegistry({ children }: { children: React.ReactNode }) {
   const [{ cache, flush }] = React.useState(() => {
     const cache: EmotionCache = createCache({ key: "mui" });
     cache.compat = true;

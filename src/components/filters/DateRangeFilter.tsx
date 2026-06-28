@@ -20,9 +20,15 @@ interface DateRangeFilterProps {
 // bx:bx-calendar — official Boxicons path, viewBox 0 0 24 24, rendered at 18×20
 function CalendarSvg() {
   return (
-    <svg width="18" height="20" viewBox="0 0 24 24" fill={tokens.color.iconMuted} xmlns="http://www.w3.org/2000/svg">
-      <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/>
-      <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/>
+    <svg
+      width="18"
+      height="20"
+      viewBox="0 0 24 24"
+      fill={tokens.color.iconMuted}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z" />
+      <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z" />
     </svg>
   );
 }
@@ -32,8 +38,8 @@ function XSvg() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g transform="rotate(45 7 7)">
-        <path d="M7 1V13" stroke={tokens.color.iconMuted} strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M1 7H13" stroke={tokens.color.iconMuted} strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M7 1V13" stroke={tokens.color.iconMuted} strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M1 7H13" stroke={tokens.color.iconMuted} strokeWidth="1.5" strokeLinecap="round" />
       </g>
     </svg>
   );
@@ -109,7 +115,9 @@ function CustomDatePicker({ value, onChange, minDate, maxDate, placeholder, styl
           <button
             type="button"
             aria-label="clear date"
-            onClick={() => { if (value) onChange(null); }}
+            onClick={() => {
+              if (value) onChange(null);
+            }}
             style={{
               width: 24,
               height: 24,
@@ -164,7 +172,10 @@ function CustomDatePicker({ value, onChange, minDate, maxDate, placeholder, styl
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <DateCalendar
             value={value}
-            onChange={(d) => { onChange(d); setOpen(false); }}
+            onChange={(d) => {
+              onChange(d);
+              setOpen(false);
+            }}
             minDate={minDate}
             maxDate={maxDate}
           />
